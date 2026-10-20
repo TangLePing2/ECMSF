@@ -1,0 +1,20 @@
+Simple LSTM baseline for waveform response prediction
+=====================================================
+
+CSV_PATH: vsg_sequence_prediction_dataset_with_initial_power1.csv
+Input signals: ['P', 'df']
+Output signals: ['P', 'df']
+Input length: 100
+Output length: 1400
+Number of signals: 2
+Static columns: ['p1', 'J', 'D']
+Hidden size: 256
+Number of LSTM layers: 4
+Dropout: 0.2
+Batch size: 64
+Epochs: 200
+Learning rate: 0.001
+Best validation loss: 0.00297172
+Epoch metrics CSV: lstm_baseline_results\epoch_metrics.csv
+Test metrics CSV: lstm_baseline_results\test_metrics.csv
+Random plotted test indices: [419, 441, 8, 301, 285, 50, 270, 225, 165, 467, 34, 460, 3, 337, 232]
